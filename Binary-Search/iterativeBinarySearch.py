@@ -11,7 +11,7 @@ def binarySearch(array, number):
 		if array[middleIndex] == number:
 			return True
 		elif array[middleIndex] < number:
-			lowerBound += 1
+			lowerBound = middleIndex + 1
 		elif array[middleIndex] > number:
 			upperBound = middleIndex
 	return False
